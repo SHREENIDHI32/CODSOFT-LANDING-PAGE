@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>STARBUCKS WEBSITE LANDING PAGE</title>
+        <link rel ="stylesheet" href="style.css">
+
+    </head>
+    <body>
+      <section>
+        <div class="circle"></div>
+        <header>
+          <a href="#"><img src="images.src/logo (1).png" class="logo"></a>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">NEW ITEMS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h3>IT'S NOT JUST COFFEE <br> IT'S <span>STARBUCKS</span></h3>
+                <p><b>Starbucks, the coffee powerhouse born in Seattle's coffee-loving heart, is more than a brew – it's an experience. Picture this: a cozy haven where the rich aroma of meticulously crafted coffee dances in the air. Starbucks doesn't just serve coffee; it crafts moments. From velvety lattes to bold espressos, every sip tells a tale of passion, quality, and a touch of Seattle magic. It's not just coffee; it's your daily escape, your meeting spot, your energizing ritual. Starbucks: where every cup is a story, and every moment feels like home.</b></p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div class="imgbox">
+              <img src="images.src/img1.png" class="starbucks">
+            
+            </div>
+            
+            <ul class="thumb">
+              <li><img src="images.src/thumb1.png"  onclick="imgSlider('images.src/img1.png');changecirclecolor('#017143')"></li>
+              <li><img src="images.src/thumb2.png"  onclick="imgSlider('images.src/img2.png');changecirclecolor('#eb7495')"></li>
+              <li><img src="images.src/thumb3.png"  onclick="imgSlider('images.src/img3.png');changecirclecolor('#d752b1')"></li>
+            </ul>
+           </div> 
+      </section>  
+      <script type="text/javascript">
+        function imgSlider(anything){
+          document.querySelector('.starbucks').src=anything;
+        }
+
+        function changecirclecolor(color){
+          const circle=document.querySelector('.circle');
+          circle.style.background=color;
+        }
+      </script>
+    </body>
+</html>
